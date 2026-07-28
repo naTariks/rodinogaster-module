@@ -1,0 +1,4 @@
+config SHIELD_RODINOGASTER_LEFT
+    def_bool $(shields_list_contains,rodinogaster_left)
+config SHIELD_RODINOGASTER_RIGHT
+    def_bool $(shields_list_contains,rodinogaster_right)
