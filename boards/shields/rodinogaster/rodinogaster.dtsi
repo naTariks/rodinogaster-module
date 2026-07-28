@@ -1,9 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 / {
 chosen {
+    zmk,matrix-transform = &default_transform;
     zmk,kscan = &kscan0;
     zmk,physical-layout = &physical_layout0;
-    zmk,matrix-transform = &default_transform;
     zephyr,display = &nice_view_spi;
     };
 
