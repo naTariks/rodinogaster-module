@@ -4,7 +4,6 @@ chosen {
     zmk,matrix-transform = &default_transform;
     zmk,kscan = &kscan0;
     zmk,physical-layout = &physical_layout0;
-    zephyr,display = &nice_view_spi;
     };
 
 default_transform: keymap_transform_0 {
@@ -60,13 +59,4 @@ physical_layout0: physical_layout_0 { // First physical layout, use different na
             low-power-enable;
         };
     };
-};
-
-nice_view_spi: &spi0 {
-    compatible = "nordic,nrf-spim";
-    status = "okay";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
-    pinctrl-names = "default", "sleep";
-    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
 };
